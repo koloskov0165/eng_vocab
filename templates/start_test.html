@@ -1,0 +1,18 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Начало теста
+{% endblock %}
+
+{% block page-lead %}
+В тесте надо будет написать перевод для английского слова.
+Любой правильный перевод будет засчитан как правильный ответ. <br>
+Чтобы начать тест, нажмите кнопку &laquo;Начать&raquo;.
+{% endblock %}
+
+
+{% block content %}
+<div class="container-sm px-5 py-5" id="term-form">
+    <a href="/test" class="btn btn-secondary btn-lg bs-btn-color bg-dark">Начать</a>
+</div>
+{% endblock %}

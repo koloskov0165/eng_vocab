@@ -1,0 +1,27 @@
+.bg-image {
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.marketing .col-lg-4 {
+  text-align: center;
+}
+.padding-links {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+.minh-90 {
+  min-height: 90%!important;
+}

@@ -1,0 +1,34 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Добавить слово
+{% endblock %}
+
+{% block page-lead %}
+Тут вы можете добавить новое английское слово в словарь.
+Если у слова есть несколько значений на русском языке, отправьте форму повторно.
+{% endblock %}
+
+
+{% block content %}
+<div class="container-sm px-5 py-5" id="term-form">
+    <form method="post">
+        <div class="row px-5 py-2">
+            <h3>Перевод</h3>
+        </div>
+        <div class="row px-5 py-2">
+            <div class="col-md-4">
+                <label for="en_word">Английское слово</label>
+                <input type="text" class="form-control input-lg" name="en_word" id="en_word">
+            </div>
+            <div class="col-md-8">
+                <label for="ru_word">Русское слово</label>
+                <input type="text" class="form-control input-lg" name="ru_word" id="ru_word">
+            </div>
+        </div>
+        <div class="px-5 py-2">
+            <button type="submit" class="btn btn-secondary btn-lg bs-btn-color bg-dark" formaction="/send_word">Записать</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

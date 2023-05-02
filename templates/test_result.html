@@ -1,0 +1,31 @@
+{% extends "base_page.html" %}
+
+{% block page-title %}
+Тест завершен
+{% endblock %}
+
+{% block page-lead %}
+Ниже находится ваша оценка и статистика правильных ответов.
+{% endblock %}
+
+{% block content %}
+<div class="container px-4 py-5" id="stats">
+    <div>
+        <h3 class="py-2">Результаты теста</h3>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <h4>{{ amount }}</h4>
+            <p class="text-muted">всего</p>
+        </div>
+        <div class="col-md-4">
+            <h4>{{ correct }}</h4>
+            <p class="text-muted">правильных</p>
+        </div>
+        <div class="col-md-4">
+            <h4>{{ score }}</h4>
+            <p class="text-muted">оценка</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
