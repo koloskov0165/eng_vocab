@@ -54,11 +54,14 @@
             {% block landing_page %}{% endblock %}
             {% block nocontent %}
             <div class="container d-flex flex-column justify-content-center minh-90">
-                <div class="p-5 mb-4 bg-light rounded-3 justify-content-center" id="title-box">
-                    <div class="container-fluid mt-5">
-                        <h1 class="display-1 fw-bold">{% block page-title %}{% endblock %}</h1>
-                        <p class="col-md-8 fs-4 mt-4">{% block page-lead %}{% endblock %}</p>
-                    </div>
+                <div class="row align-items-center g-lg-5 pt-5">
+                  <div class="col-lg-5 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">{% block page-title %}{% endblock %}</h1>
+                  </div>
+                  <div class="col-md-10 mx-auto col-lg-7 border-start">
+                      <p class="col-lg-10 fs-4">{% block page-lead %}{% endblock %}</p>
+
+                  </div>
                 </div>
                 {% block content %}{% endblock %}
             </div>

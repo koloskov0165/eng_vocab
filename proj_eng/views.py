@@ -60,7 +60,7 @@ def test(request):
     context = {}
     context['en_word'] = en_word
     context['volume'] = len(set(df.en.values))
-    context['idx'] = len(set(request.session['en_set']))
+    context['idx'] = len(set(request.session['en_set'])) + 1
     return render(request, "test.html", context)
 
 def check_ans(request, finish=False):

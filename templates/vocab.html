@@ -4,11 +4,12 @@
 Словарь
 {% endblock %}
 {% block page-lead %}
-Здесь собраны все слова с переводом в таблицу
+Здесь собраны все слова записанные ранее. <br>
+Чтобы добавить новое слово, заполните <a href="/add_word">форму</a>.<br>
 {% endblock %}
 
 {% block content %}
-<div class="container px-4 py-5" id="terms-table">
+<div class="container px-4 pt-5" id="terms-table">
     <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -18,10 +19,10 @@
               <th scope="col" class="py-3">Русское слово</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="table-group-divider">
             {% for cnt, en, ru in words %}
             <tr>
-                <td class="py-3">{{ cnt }}</td>
+                <th scope="row" class="py-3">{{ cnt }}</th>
                 <td class="py-3">{{ en }}</td>
                 <td class="py-3">{{ ru }}</td>
             </tr>
